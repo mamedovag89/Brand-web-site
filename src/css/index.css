@@ -2,6 +2,7 @@
 
 /* import Font */
 
+/* reset codes */
 * {
   padding: 0;
   margin: 0;
@@ -11,6 +12,7 @@
   font-family: "Lato", sans-serif;
 }
 
+/* start header */
 .header {
   background-color: #222;
   width: 100%;
@@ -50,6 +52,10 @@
   font-size: 30px;
 }
 
+.social {
+  position: relative;
+}
+
 .menuList {
   display: flex;
   align-items: center;
@@ -60,6 +66,46 @@
   color: #fff;
   font-size: 30px;
 }
+
+.burgerTitle {
+  color: #222224;
+}
+
+.active:hover .burgerMenu {
+  display: flex;
+}
+
+.burgerMenu {
+  display: none;
+  width: 245px;
+  height: 400px;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: absolute;
+  top: 58px;
+  left: 0;
+  padding: 32px;
+}
+
+.manItem {
+  padding: 5px 0;
+}
+
+.womanItem {
+  padding: 5px 0;
+}
+
+.manList::first-line {
+  color: #f16d7f;
+}
+
+.womanList::first-line {
+  color: #f16d7f;
+}
+
+/* header end */
 
 .brands {
   width: 100%;
@@ -112,7 +158,7 @@
 
 .categContent {
   width: 100%;
-margin: 0 auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -175,101 +221,110 @@ margin: 0 auto;
   line-height: normal;
 }
 
-.feturedHeader{
+.feturedHeader {
   width: 100%;
   text-align: center;
-  padding-top:96px;
-  padding-bottom:48px;
-
+  padding-top: 96px;
+  padding-bottom: 48px;
 }
- 
-  
- .fetured{
+
+.fetured {
   width: 100%;
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.feturedTitle{
-color: #222;
-font-family: "Lato";
-font-size: 30px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-  
-
-.feturedInfo{
-color: #9F9F9F;
-font-family: "Lato";
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+.feturedTitle {
+  color: #222;
+  font-family: "Lato";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.feturedContext{
+.feturedInfo {
+  color: #9f9f9f;
+  font-family: "Lato";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.feturedContext {
   width: 100%;
   display: grid;
   grid-template-columns: auto auto auto;
-  justify-content:center ;
-gap: 30px;
-margin-bottom:50px ;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
 }
-.cardImage{
+.cardImage {
   width: 100%;
 }
-.cardImage>img{
-width: 100%;
-object-fit: contain;
+.cardImage > img {
+  width: 100%;
+
 }
 
-.feturedCard:nth-child(2){
+
+
+.feturedCard:nth-child(2) {
   background-image: url("../images/Rectangle\ 15\ copy.png");
 }
 
-.cardInfo{
+.cardImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+
+.cardInfo {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 16px;
-  padding: 24px 16px ;
-background-color: #F8F8F8;
+  padding: 24px 16px;
+  background-color: #f8f8f8;
 }
 
-.cardDetail{
-  color: #5D5D5D;
-font-family: "Lato";
-font-size: 14px;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
+.cardDetail {
+  color: #5d5d5d;
+  font-family: "Lato";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
-.cardPrice{
-  color: #F16D7F;
+.cardPrice {
+  color: #f16d7f;
 }
 
-.sectionBtn{
+.sectionBtn {
   width: 100%;
   text-align: center;
 }
 
-.sectionBtn>a{
+.sectionBtn > a {
   padding: 15px 39px 14px 39px;
-  border: 1px solid #F26376;
-  color:#F26376 ;
+  border: 1px solid #f26376;
+  color: #f26376;
 }
-.services{
+.services {
   background-color: #222224;
   padding: 104px 0;
 }
 
-.serviceContext{
+.serviceContext {
   width: 100%;
   display: flex;
   align-items: center;
@@ -277,7 +332,7 @@ line-height: normal;
   gap: 30px;
 }
 
-.serviceCard{
+.serviceCard {
   width: 33%;
   display: flex;
   flex-direction: column;
@@ -286,8 +341,8 @@ line-height: normal;
   gap: 18px;
 }
 
-.serviceTitle{
-  color: #FBFBFB;
+.serviceTitle {
+  color: #fbfbfb;
   font-family: "Lato";
   font-size: 19.96px;
   font-style: normal;
@@ -295,44 +350,47 @@ line-height: normal;
   line-height: normal;
 }
 
+.serviceInfo {
+  color: #fbfbfb;
 
-.serviceInfo{
-  color: #FBFBFB;
-
-text-align: center;
-font-family: Lato;
-font-size: 13.972px;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
+  text-align: center;
+  font-family: Lato;
+  font-size: 13.972px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
-.subInfo{
-  color: #222;
-  max-width: 200px;
-
+.subInfo {
+  color: #222224;
+  text-align: center;
+  font-family: "Lato";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 350px;
 }
-.subscribe{
+.subscribe {
   width: 100%;
   height: 448px;
   background-image: url("../images/Layer\ 41.svg");
   background-position: center;
   background-size: cover;
-  display: flex;
-  align-items: center;
+  background-repeat: no-repeat;
   position: relative;
 }
 
-.overlay{
+.overlay {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(244, 244, 244, 0.70);
+  background: rgba(244, 244, 244, 0.7);
 }
 
-.leftSide{
+.leftSide {
   width: 50%;
   height: 100%;
   display: flex;
@@ -340,8 +398,114 @@ line-height: normal;
   justify-content: center;
   flex-direction: column;
   gap: 40px;
+  z-index: 1000;
 }
 
-.leftSide>img{
+.leftSide > img {
   border-radius: 50%;
+}
+
+.mainContent {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rightSide {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  z-index: 1000;
+}
+
+.inpTitle {
+  color: #222224;
+  text-align: center;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 167.2%;
+}
+
+.inpInfo {
+  color: #222224;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 167.2%;
+}
+
+.rightInput {
+  position: relative;
+}
+
+.rightInput > input {
+  padding: 7px 64px 6px 22px;
+  border: none;
+  background-color: #e1e1e1;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  outline: none;
+}
+
+.inpButton {
+  color: #fff;
+  text-align: center;
+  font-family: "Lato";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #f16d7f;
+  padding: 7px 7px 5px 8px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: absolute;
+  right: -74px;
+  top: 0;
+  text-align: center;
+}
+
+.inpButton:hover {
+  background-color: white;
+  border: 1px solid #f16d7f;
+  transition: 0.3s;
+  color: #f16d7f;
+  transform: scale(1);
+}
+
+.footer {
+  background-color: #222224;
+  padding: 30px 0;
+}
+
+.footerContent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rights > a {
+  color: #fff;
+}
+
+.socialList {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.socialList > img {
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
 }

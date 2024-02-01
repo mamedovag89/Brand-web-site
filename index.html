@@ -21,8 +21,26 @@
           </div>
           <div class="social">
             <ul class="menuList">
-              <li class="menuItem">
-                <a href="#"><i class="fa-solid fa-bars"></i></a>
+              <li class="menuItem active">
+                <a class="burgerIcon" href="#"><i class="fa-solid fa-bars"></i></a>
+                <div class="burgerMenu">
+                  <h4 class="burgerTitle">MENU</h4>
+                  <ul class="manList">
+                    MAN
+                    <li class="manItem">Accessories</li>
+                    <li class="manItem">Bags</li>
+                    <li class="manItem">Denim</li>
+                    <li class="manItem">T-Shirts</li>
+                  </ul>
+                  <ul class="womanList">
+                    WOMAN
+                    <li class="womanItem">Accessories</li>
+                    <li class="womanItem">Jackets & Coats</li>
+                    <li class="womanItem">Polos</li>
+                    <li class="womanItem">T-Shirts</li>
+                    <li class="womanItem">Shirts</li>
+                  </ul>
+                </div>
               </li>
               <li class="menuItem">
                 <a href="#"><i class="fa-solid fa-user"></i></a>
@@ -89,7 +107,7 @@
             <div class="feturedContext">
               <div class="feturedCard">
                 <div class="cardImage">
-                  <img src="./src/images/person1.svg" alt="person">
+                  <img src="./src/images/person1.svg" alt="person" />
                 </div>
                 <div class="cardInfo">
                   <h5 class="cardTitle">ELLERY X M'O CAPSULE</h5>
@@ -104,8 +122,7 @@
               <div class="feturedCard">
                 <div class="cardImage">
                   <img
-                    height="449px"
-                    src="./src/images/Layer 51.png"
+                    src="./src/images/person2.png"
                     alt="person"
                   />
                 </div>
@@ -158,8 +175,8 @@
                   <h5 class="cardTitle">ELLERY X M'O CAPSULE</h5>
                   <p class="cardDetail">
                     Known for her sculptural takes on traditional tailoring,
-                    Australian arbiter of cool Kym Ellery teams up with Moda
-                    Operandi.
+                    Australian arbiter of coo lorel Kym Ellery teams up with
+                    Moda Operandi.
                   </p>
                   <span class="cardPrice">$52.00</span>
                 </div>
@@ -217,20 +234,50 @@
       </section>
       <section class="subscribe">
         <div class="overlay"></div>
-        <div class="leftSide">
-          <img src="./src/images/Intersect.svg" alt="person" />
-          <div class="subInfo">
-            “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
-            purus condimentum“
+        <div class="mainContent">
+          <div class="leftSide">
+            <img src="./src/images/Intersect.svg" alt="person" />
+            <div class="subInfo">
+              “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+              pulvinar purus condimentum“
+            </div>
           </div>
-        </div>
-        <div class="rightSide">
-          <h5 class="title"> SUBSCRIBE </h5>
-          <p class="Info">FOR OUR NEWLETTER AND PROMOTION</p>
+          <div class="rightSide">
+            <div class="inputTitle">
+              <h5 class="inpTitle">SUBSCRIBE</h5>
+              <p class="inpInfo">FOR OUR NEWLETTER AND PROMOTION</p>
+            </div>
+            <div class="rightInput">
+              <input
+                type="text"
+                name="message"
+                placeholder="Enter your email"
+                id="1"
+              />
+              <a class="inpButton" href="#">Subscribe</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footerContent">
+          <div class="rights">
+            <a href="#">© 2022 Brand All Rights Reserved.</a>
+          </div>
+          <div class="socialList">
+            <img
+              src="./src/images/facebook-f-brands (3) 1.svg"
+              alt="facebook"
+            />
+            <img src="./src/images/instagram.svg" alt="instagram" />
+            <img src="./src/images/pinterest-p-brands 1.svg" alt="pinterest" />
+            <img src="./src/images/twitter-brands 1.svg" alt="twitter" />
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://kit.fontawesome.com/f4c5d8da64.js"
       crossorigin="anonymous"
