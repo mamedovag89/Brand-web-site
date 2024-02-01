@@ -67,6 +67,15 @@
   font-size: 30px;
 }
 
+
+.menuItem > a:hover {
+  color: #f16d7f;
+}
+
+.fa-magnifying-glass:hover{
+  color: #f16d7f;
+}
+
 .burgerTitle {
   color: #222224;
 }
